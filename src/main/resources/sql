@@ -1,0 +1,13 @@
+INSERT INTO contactos.contactos (idContacto,nombre,email,edad) VALUES (310230312,'Alejandro Martinez','alejandro@gmail.com',25),
+(324242342,'Santiago Martinez','santiago@gmail.com',20),
+(543535353,'Jose Manuel','jose@gmail.com',40),
+(123123123,'Aida Oses','aida@gmail.com',46),
+(313123123,'Amaru Martinez','amaru@gmail.com',8),
+(876564644,'Juanita Gomez','juanita@gmail.com',34)
+
+CREATE TABLE `contactos`.`contactos` (
+  `idContacto` INT NOT NULL,
+  `nombre` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `edad` INT NULL,
+  PRIMARY KEY (`idContacto`));
