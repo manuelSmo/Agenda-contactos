@@ -15,12 +15,12 @@ public class ContactoServiceImpl implements ContactoService {
     ContactoDao contactoDao;
 
     @Override
-    public boolean agregarContacto(Contacto contacto) {
+    public void agregarContacto(Contacto contacto) throws Exception{
         if (contactoDao.buscarContacto(contacto.getIdContacto()) == null){
             contactoDao.agregarContacto(contacto);
-            return true;
+            return;
         }
-        return false;
+        throw new Exception("Contacto Repetido");
     }
 
     @Override
